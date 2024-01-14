@@ -1,0 +1,17 @@
+.textDesign{
+    text-align: center; 
+    background-color: rgb(212, 216, 221);
+     font-style: oblique;
+      font-weight: bolder;
+}
+
+
+.category-headline {
+    text-align: center;
+    font-family: cursive;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(90, 117, 177, 0.1);;
+    /* Add other styling as needed */
+  }

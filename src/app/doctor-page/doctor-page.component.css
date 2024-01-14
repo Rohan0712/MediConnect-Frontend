@@ -1,0 +1,33 @@
+.textDesign{
+    text-align: center; 
+    background-color: rgb(212, 216, 221);
+     font-style: oblique;
+      font-weight: bolder;
+}
+
+  .row {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  app-tile {
+    flex: 0 0 30%; /* Adjust width as needed */
+  }
+  
+  .col {
+    display: grid;
+  }
+  
+  .column {
+    margin-right: 15px; /* Adjust the margin-right to set the desired spacing between columns */
+  }
+
+  .category-headline {
+    text-align: center;
+    font-family: cursive;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(90, 117, 177, 0.1);;
+    /* Add other styling as needed */
+  }

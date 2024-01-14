@@ -1,0 +1,124 @@
+nav {
+    background-color: #2176a3;
+    color: #fff;
+    height: 50px;
+    padding-top: 2px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    
+  }
+  
+  nav li {
+    padding-right: 10px;
+    margin-right: 20px;
+  }
+  
+  
+  nav a {
+    color: #fff;
+  }
+
+  /* Style for the whole navigation bar */
+.navbar {
+  background-color: #2176a3;
+  color: #2176a3;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+  align-items: center;
+}
+
+/* Style for the left side (component list) */
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.component-list {
+  list-style-type: none;
+  
+}
+
+.component-list li {
+  display: inline;
+  margin-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.component-list li a {
+  color: #fff;  
+  text-decoration: none;
+}
+
+/* Style for the right side (authentication buttons) */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.authentication {
+  margin-left: auto;
+}
+
+.signin, .signout {
+  background-color: #fff;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.signin:hover, .signout:hover {
+  background-color: #ddd;
+}
+
+.color-change-button {
+  background-color: #ffffff; /* Original button color */
+  color: #030303; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s; /* 1 second transition effect */
+  font-style:oblique ;
+} 
+
+.liStyle{
+  padding-right: 10px; 
+  margin-right: 10px;
+}
+
+.astyle{
+  text-decoration: none; 
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.color-change-button {
+  background-color: #3498db; /* Original button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s; /* 1 second transition effect */
+}
+
+.color-change-button:hover {
+  background-color: #30719d; /* Color on hover */
+}
+
+.color-change-button-cart {
+  background-color: yellowgreen; /* Original button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s; /* 1 second transition effect */
+}
+
+.color-change-button-cart:hover {
+  background-color: rgb(109, 144, 39); /* Color on hover */
+}

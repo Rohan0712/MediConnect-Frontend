@@ -1,0 +1,32 @@
+/* src/app/about/about.component.css */
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    /* padding: 20px; */
+  }
+  
+  .about-page {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-page p {
+    font-size: 16px;
+  }
+  
+  .textDesign{
+    text-align: center; 
+    background-color: rgb(212, 216, 221);
+     font-style: oblique;
+      font-weight: bolder;
+}
+
+.category-headline {
+  text-align: center;
+  font-family: cursive;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(90, 117, 177, 0.1);;
+  /* Add other styling as needed */
+}

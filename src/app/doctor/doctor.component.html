@@ -1,0 +1,38 @@
+<div class="tile-container" style="align-items: center;">
+    <div class="tile" *ngFor="let doctor of doctors" style="padding-left: 60px;">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+           <h2><i class="fa-solid fa-user-doctor"></i>  {{ doctor.name }} </h2>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content style="padding-left: 16px;">
+          <img [src]="doctor.image" alt="{{ doctor.name }}" style="height: 100px;"/>
+          <p>{{ doctor.specialization }}</p>
+          <p>{{ doctor.description }}</p>
+        </mat-card-content>
+        <mat-card-actions style="padding-left: 25px;">
+          <!-- <button mat-button (click)="toggleClickedState()" class="color-change-button">Buy Now</button> -->
+          <div class="row" style="padding-bottom: 5px;">
+            <div class="col" style="padding-right: 50px;">
+              <label for="" style="padding-top: 25px;">
+                <!-- <i class="fa-solid fa-money-bill-wave"></i> -->
+                Price : <i class="fa-solid fa-sterling-sign"></i> {{doctor.price}}
+                
+              </label>
+            </div>
+            <div class="col" style="padding-top: 15px;padding-right: 10px;">
+              <button mat-button style="height: 40px;" class="color-change-button-cart" (click)="subscribe(doctor)" >Subscription</button> 
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+
+          </div>
+        </mat-card-actions>
+    </mat-card>
+    </div>
+    </div>  

@@ -1,0 +1,36 @@
+<!-- <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/products">Products</a></li>
+
+    </ul>
+  </nav> -->
+  <div class="navbar">
+    <div style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+      <ul class="left">
+        <li class="liStyle"><a class="astyle" routerLink="/" routerLinkActive="active">Home</a></li>
+        <li class="liStyle"><a class="astyle" routerLink="/medicines" routerLinkActive="active">Medicines</a></li>
+        <li class="liStyle"><a class="astyle" routerLink="/doctors" routerLinkActive="active">Doctors</a></li>
+        <li class="liStyle"><a class="astyle" routerLink="/support" routerLinkActive="active">Support</a></li>
+        <li class="liStyle"><a class="astyle" routerLink="/about" routerLinkActive="active" >About</a></li>
+        <!-- Add more navigation links for your components here -->
+      </ul>
+    </div>
+    <div>
+      <img src="../../assets/faviconheader.jpg" style="height: 50px;width: 200px; padding-right: 265px; padding-top: 4px;">
+    </div>
+    <div class="right">
+      <div *ngIf="showCart">
+        <img src="../../assets/cart-with.png" style="height: 30px;width: 30px; padding-top: 5px; padding-right: 5px;">
+      </div>
+      <div *ngIf="!showCart">
+        <img src="../../assets/cart-without.png" (click)="goToCart()" style="height: 30px;width: 30px; padding-top: 5px; padding-right: 5px;">
+      </div>
+      <div *ngIf="!customService.flag">
+        <button (click)="signIn()" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" class="color-change-button-cart" routerLink="/login">Sign In </button>
+      </div>
+      <div *ngIf="customService.flag">
+        <button (click)="signOut()" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" class="color-change-button-cart" [(ngModel)]="customService.flag" routerLink="/login">Sign Out</button>
+      </div>
+    </div>
+  </div>

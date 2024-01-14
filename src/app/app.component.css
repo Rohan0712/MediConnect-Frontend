@@ -1,0 +1,40 @@
+.textDesign{
+  text-align: center; 
+  background-color: rgb(212, 216, 221);
+   font-style: oblique;
+    font-weight: bolder;
+}
+
+
+
+/* For single backgorund image */
+body {
+  background-image: url('../images/faviconheader.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*
+*/  
+/* src/app/your-component/your-component.component.css */
+.component-container {
+  background-image: url('../images/faviconheader.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 0 !important;
+  /* background-color: aquamarine; */
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+  width: 100%;
+}
+
+.footerComponents {
+  border: 1px solid red;
+}

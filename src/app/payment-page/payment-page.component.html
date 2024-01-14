@@ -1,0 +1,69 @@
+<div class="cart">
+    <h2 class="category-headline">Payment Page</h2>
+    <div style="text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+            <img src="../../assets/tick.png" style="height: 30px;width: 30px; padding-top: 5px; padding-right: 5px;">
+            <h1>Thank you</h1>
+            <h1>Order Successfully Placed</h1>
+            <p>Please add below reference number in the description box while making a payment and Share the receipt during order pickup</p>
+            <div class="tableContent" style="padding-bottom: 20px;padding-left: 100px;">
+                    <table>
+                        <thead>
+                    <tr>
+                        <th>Payment Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Loop through cart items -->
+                        <!-- <tr *ngFor="let item of cartItems"> -->
+                        <tr>
+                            <td>Reference Number:  {{randomValue}} </td>
+                        </tr>    
+                        <tr>
+                            <td>Total Amount to be paid: <i class="fa-solid fa-sterling-sign"></i> {{ getTotal() }} </td>
+                        </tr>
+                        <tr>
+                            <td>Store Address: Frederick Street, Farnworth, Bolton, Lancashire, United Kingdom, BL49AH</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="text-align: center;padding-bottom: 20px;">
+            <a  style="padding-left: 20px;padding-top: 5px; height: 30px; font-size: x-large; text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                 Go to Home Page
+            </a>
+          <button mat-button class="color-change-button-cart" (click)="goToHomePage()">Click Here</button>
+          </div>
+    </div>
+    
+    <!-- <table>
+
+    </table>
+    <thead>
+        <tr class="textDesign">
+            <th colspan="4"> Ordered List</th>
+        </tr>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cartItem of cartItemArr">    
+            <td>{{ cartItem.name }} </td>
+            <td>{{ cartItem.price}} £</td>
+            <td>
+              {{ cartItem.quantity }}
+            </td>
+            <td>{{cartItem.price * cartItem.quantity}} £</td>
+          </tr>
+          <tr>
+            <td>
+                Total:
+            </td>
+            <td>{{getTotal()}} £</td>
+          </tr>
+    </tbody> -->
+
+</div>    

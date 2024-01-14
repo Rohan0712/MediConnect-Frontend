@@ -1,0 +1,70 @@
+<!-- <div class="container"> -->
+ 
+    <div class="container">
+        <div class="section">
+          <img src="../../assets/register22.jpg" style="height: 125%;width: 150%;">
+        </div>
+        <div class="section" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-left: 220px;">
+           <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Registration</h1>
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="username">
+                <i class="fas fa-user"></i> <!-- User icon -->
+                Username
+              </label>
+              <input type="text" id="username" name="username" [(ngModel)]="username" size="40" maxlength="40" required/>
+            </div>
+            
+            <div class="form-group">
+              <label for="firstName">
+                <i class="fa-solid fa-user-nurse"></i>
+                First Name
+              </label>
+              <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" size="40" maxlength="40" required/>
+            </div>
+            <div class="form-group">
+              <label for="lastName">
+                <i class="fa-solid fa-user-nurse"></i>
+                Last Name
+              </label>
+              <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" size="40" maxlength="40" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i> <!-- Email icon -->
+                Email
+              </label>
+              <input type="email" id="email" name="email" [(ngModel)]="email" size="40" maxlength="40" required/>      
+            </div>
+            <div class="form-group">
+              <label for="address">
+                <i class="fa-regular fa-address-book"></i>
+                Address
+              </label>
+              <input type="address" id="address" name="address" [(ngModel)]="address" size="40" maxlength="40" required/>      
+            </div>
+            <div class="form-group">
+              <label for="password">
+                <i class="fa-solid fa-key"></i>
+                Password
+              </label>
+              <input type="password" id="password" name="password" [(ngModel)]="password" size="40" maxlength="40" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">
+                <i class="fa-solid fa-phone"></i><!-- Phone icon -->
+                Phone
+              </label>
+              <input type="text" id="phone" name="phone" [(ngModel)]="phone" size="10" maxlength="10" required/>      
+            </div>
+            <div style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;justify-content: center;">
+                <button type="submit" (click)="openModal()">Register</button>          
+                <a href="/login" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-left: 20px;">Click here to Login!</a>
+              
+            </div>
+          </form>
+          <!-- your-component.component.html -->
+          <app-custom-modal [isVisible]="isModalVisible" (closeModal)="onCloseModal()"></app-custom-modal>
+        </div>
+    </div>
+  <!-- </div> -->

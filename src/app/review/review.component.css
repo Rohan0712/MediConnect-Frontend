@@ -1,0 +1,115 @@
+/* tile.component.css */
+mat-card {
+    width: 300px; /* Adjust the width as needed */
+    margin: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(178, 221, 250);
+  }
+  
+  /* Add more styles as needed */
+.button{
+    background-color: yellowgreen;
+
+}   
+
+.clicked-button {
+  background-color: #007bff; /* Change the background color when clicked */
+  color: #fff; /* Change the text color when clicked */
+}
+
+.color-change-button {
+  background-color: #3498db; /* Original button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s; /* 1 second transition effect */
+}
+
+.color-change-button:hover {
+  background-color: #30719d; /* Color on hover */
+}
+
+.color-change-button-cart {
+  background-color: yellowgreen; /* Original button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s; /* 1 second transition effect */
+}
+
+.color-change-button-cart:hover {
+  background-color: rgb(109, 144, 39); /* Color on hover */
+}
+
+
+/* app.component.css */
+.tile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  margin: 0 5px; /* Adjust margin as needed */
+}
+
+.cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* Column Gap */
+.cardList > * {
+  box-sizing: border-box;
+}
+.cardList > *:not(:last-child) {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+/* Item sizing */
+.cardListItem {
+  flex: 0 1 calc(33.3% - 32px);
+}
+
+.textDesign{
+  text-align: center; 
+  background-color: rgb(212, 216, 221);
+   font-style: oblique;
+    font-weight: bolder;
+}
+
+
+.star-rating {
+  font-size: 24px;
+}
+
+.star {
+  display: inline-block;
+  color: #fcfcfc; /* Empty star color */
+}
+
+.star.filled {
+  color: #f1c40f; /* Filled star color */
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjust based on your layout preferences */
+}
+
+.tile {
+  width: 25%; /* Adjust based on your layout preferences */
+  margin-bottom: 15px; /* Adjust based on your layout preferences */
+  border: 0px solid #ccc; /* Optional: Add styling for borders or background */
+  padding: 5px;
+  box-sizing: border-box;
+}

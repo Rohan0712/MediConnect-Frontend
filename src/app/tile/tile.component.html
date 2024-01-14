@@ -1,0 +1,46 @@
+<div class="tile-container">
+    <div *ngFor="let tile of tiles" class="tile" style="padding-left: 60px;">
+      <!-- Your dynamic record content goes here -->
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <div>
+
+              <h2 ><i class="fa-solid fa-prescription"></i>   {{ tile.name }} </h2>
+            </div>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content >
+          <img [src]="tile.imageUrl" alt="{{ tile.name }}" style="width: 200px; height: 50px;" />
+          <label>
+            
+            <h3> Price: <i class="fa-solid fa-sterling-sign"></i> {{tile.price}} </h3>
+            
+          </label>
+          <p>{{ tile.content }}</p>
+          <p>{{ tile.description }}</p>
+        </mat-card-content>
+        <mat-card-actions style="padding-left: 15px;">
+          <!-- <button mat-button (click)="toggleClickedState()" class="color-change-button">Buy Now</button> -->
+          <div class="row">
+            <div class="column" style="padding-top: 7px;padding-left: 0px;">
+              <label for="username">
+                <i class="fa-solid fa-capsules"></i>
+                Quantity
+              </label>
+              <select name="choice" [(ngModel)]="tile.quantity" >
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="column" style="padding-right: 5px;">
+              <button mat-button class="color-change-button-cart" (click)="addToCart(tile,tile.quantity)" >{{cartText}}</button>
+            </div>
+          </div>  
+        </mat-card-actions>
+    </mat-card>
+    </div>
+  </div>

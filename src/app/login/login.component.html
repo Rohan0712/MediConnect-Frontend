@@ -1,0 +1,46 @@
+<div class="container">
+    <div>
+      <img src="../../assets/register1.jpg" style="height: 100%;width: 120%;">
+    </div>
+    <div class="section" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-top: 50px; padding-left: 150px;">
+      <br>
+      <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Login</h1>
+      <form (ngSubmit)="onSubmit()" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+        <div class="form-group">
+          <label for="username">
+            <i class="fas fa-envelope"></i>
+            Email
+          </label>
+          <input type="text" id="username" name="username" [(ngModel)]="username" size="40" maxlength="40" required>
+        </div>
+        <!-- <div class="form-group">
+            <label for="username">
+              <i class="fas fa-envelope"></i>
+              Email
+            </label>
+            <input type="username" name="username" [(ngModel)]="username" size="40" maxlength="40" required/>
+        </div>-->
+        <div class="form-group">
+          <label for="password">
+            <i class="fa-solid fa-key"></i>
+            Password
+          </label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" size="40" maxlength="40" required>
+        </div>
+        <div>
+          <button type="submit" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Login</button>
+          <a href="/signup" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-left: 20px;">Create an account</a>
+        </div>
+        <!-- <div>
+          <button (click)="openModal()">Open Bootstrap Modal</button>
+          <app-bootstrap-modal *ngIf="modalService.isOpened"></app-bootstrap-modal>
+          <button (click)="closeModal()">Close Bootstrap Modal</button>
+        </div> -->
+        <br>
+        <br>
+        <br>
+      </form>
+      <!-- your-component.component.html -->
+      <!-- <app-custom-modal [isVisible]="isModalVisible" (closeModal)="onCloseModal()"></app-custom-modal> -->
+    </div>
+  </div>

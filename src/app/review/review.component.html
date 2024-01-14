@@ -1,0 +1,23 @@
+<div class="tile-container">
+    <div class="tile" *ngFor="let review of reviews" style="padding-left: 7px;">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+           <h3>{{ review.name }} <br>
+            {{review.location}}
+          </h3>
+          <div class="star-rating">
+            <span class="star" *ngFor="let star of stars; let i = index" [ngClass]="{'filled': i < review.rating}">&#9733;</span>
+          </div>
+           <!-- <h4>Rating out of 5: {{review.rating}}</h4> -->
+           <h4>Rating out of 5</h4>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content style="padding-left: 15px;">
+          
+          <p>{{ review.comment }}</p>
+          <p>{{ review.date }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>  

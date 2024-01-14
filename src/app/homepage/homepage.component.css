@@ -1,0 +1,40 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  .content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .textDesign{
+    text-align: center; 
+    background-color: rgb(225, 229, 235);
+     font-style: oblique;
+      font-weight: bolder;
+}
+
+/* category-headline.component.css */
+
+.category-headline {
+  text-align: center;
+  font-family: cursive;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(90, 117, 177, 0.1);;
+  /* Add other styling as needed */
+}
+
+.disclaimer {
+  color: #FF0000;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
